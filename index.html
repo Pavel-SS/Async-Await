@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>async/await</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1 class="title txt">
+            Async Await
+        </h1>
+        <p class="txt">
+            <b>Синхронный код</b> - код в котором выполнение задач осуществляется последовательно (JS ждет когда одна
+            задача закончится и только после этого приступает к выполнению следующей).
+        </p>
+        <p class="txt">
+            <b>Асинхронный код</b> - код в котором выполнение задач осуществляется непоследовательно (JS не ждет когда
+            одна задача закончится, а сразу приступает к выполнению следующей).
+        </p>
+        <div class="txt">
+            <span>
+                В JS существует несколько способов работы с асинхронным кодом.
+            </span> 
+            <ul>
+                <li>callback (Старый способ, который на данный момент мало применим из-за громоздкости коды, что в свою очередь усложняло прочтение данного кода)</li>
+                <li>promise (удобный способ для работы с асинхронным кодом. Promise – это специальный объект, который содержит своё состояние. Вначале pending («ожидание»), затем – одно из: fulfilled («выполнено успешно») или rejected («выполнено с ошибкой»).) <br/>
+                    <img src="/img/promise.jpg" alt="img promise">
+                </li>
+                <li>async/await (На самом деле он использует те же promise. Иными словами async/await это не какая-то вещь в себе, она работает поверх promise)</li>
+            </ul>
+        </div>
+        <video controls></video>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
