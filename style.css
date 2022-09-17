@@ -6,7 +6,7 @@
       position: relative;
       background-color: rgb(10, 124, 71);
       width: auto;
-      height: 100vh;
+      height: 100%;
   }
   .title{
       display: block;
@@ -17,21 +17,36 @@
       color: #fff;
       text-align: center;
   }
-  p.txt{
-      font-size: 1.3em;
+  p.txt, div.txt{
+      font-size: 1.6em;
+      margin:0 auto 25px auto;
+      width: 65vw;
   }
   .img-block{
      margin: 25px auto;
   }
   
-  
-  .img-block img{
-      display: block;
-      margin: 0 auto;
-      
+  .image-block {
+    margin: 0 auto;
+    width: 80vw;
   }
-  .img-block p{
-      display: block;
-      margin-top: 10px;
-      
+  .image-block > img{
+    width: 100%;
+  }
+  li{
+    padding-bottom: 20px;
+  }
+  li > img{
+    width: 15vw;;
+  }
+  video {
+    display: block;
+    margin: 0 auto;
+    width: 50vw;
+    background-color:rgba(0, 0, 0, 0.404);
+  }
+
+  span > i , li > i{
+    font-weight: 900;
+    color:rgb(241, 205, 159)
   }
